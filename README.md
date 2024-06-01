@@ -1,5 +1,6 @@
 <div align="center">
 <h2 align="center">Alecado systems assihnment</h2>
+</div>
 
 **Illustration of the RoomFormer model**. Given a top-down-view density map of the input point cloud, (a) the feature backbone extracts multi-scale features, adds positional encodings, and flattens them before passing them into the (b) Transformer encoder. (c) The Transformer decoder takes as input m two-level queries, one level for the room polygons (up to M) and one level for their corners (up to N per room polygon). A feed-forward network (FFN) predicts a class c for each query to accommodate for varying numbers of rooms and corners. During training, the polygon matching guarantees optimal assignment betIen predicted and groundtruth polygons.
 
