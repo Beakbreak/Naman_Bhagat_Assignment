@@ -1,58 +1,7 @@
 <div align="center">
 <h2 align="center">Connecting the Dots: Floorplan Reconstruction Using Two-Level Queries</h2>
 <h3 align="center">CVPR 2023</h3>
-<a href="https://n.ethz.ch/~yuayue/">Yuanwen Yue</a>, <a href="https://theodorakontogianni.github.io/">Theodora Kontogianni</a>, <a href="https://igp.ethz.ch/personen/person-detail.html?persid=143986">Konrad Schindler</a>, <a href="https://francisengelmann.github.io/">Francis Engelmann</a>
-
-ETH Zurich
-
-
-<!-- ![teaser](./imgs/teaser.jpg) -->
-<img src="./imgs/teaser.jpg" width=80% height=80%>
-
-</div>
-
-
-This repository provides code, data and pretrained models for **RoomFormer**, a Transformer model for single-stage floorplan reconstruction.
-
-[[Project Webpage](https://ywyue.github.io/RoomFormer/)]    [[Paper](https://arxiv.org/abs/2211.15658)]    [[Video](https://www.youtube.com/watch?v=yzYe4yVN1NU)]
-
-
-<details open="open" style='padding: 10px; border-radius:5px 30px 30px 5px; border-style: solid; border-width: 1px;'>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#abstract">Abstract</a>
-    </li>
-    <li>
-      <a href="#method">Method</a>
-    </li>
-    <li>
-      <a href="#preparation">Preparation</a>
-    </li>
-    <li>
-      <a href="#evaluation">Evaluation</a>
-    </li>
-    <li>
-      <a href="#training">Training</a>
-    </li>
-    <li>
-      <a href="#semantically-rich-floorplan">Semantically-rich Floorplan</a>
-    </li>
-    <li>
-      <a href="#citation">Citation</a>
-    </li>
-    <li>
-      <a href="#acknowledgment">Acknowledgment</a>
-    </li>
-  </ol>
-</details>
-
-
-## Abstract
-
-We address 2D floorplan reconstruction from 3D scans. Existing approaches typically employ heuristically designed multi-stage pipelines. Instead, we formulate floorplan reconstruction as a single-stage structured prediction task: find a variable-size set of polygons, which in turn are variable-length sequences of ordered vertices. To solve it we develop a novel Transformer architecture that generates polygons of multiple rooms in parallel, in a holistic manner without hand-crafted intermediate stages. The model features two-level queries for polygons and corners, and includes polygon matching to make the network end-to-end trainable. Our method achieves a new state-of-the-art for two challenging datasets, Structured3D and SceneCAD, along with significantly faster inference than previous methods. Moreover, it can readily be extended to predict additional information, i.e., semantic room types and architectural elements like doors and windows.
-
-
+<a href="https://n.ethz.ch/~yuayue/">Yu
 ## Method
  ![space-1.jpg](./imgs/model.gif) 
 
